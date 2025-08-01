@@ -7,6 +7,7 @@ import CreatorTableItem from '@/Views/Dashboard/Parts/Orders/Creator/DashboardTa
 import FanTableItem from '@/Views/Dashboard/Parts/Orders/Fan/DashboardTableItemPart.vue'
 import AgentTableItem from '@/Views/Dashboard/Parts/Orders/Agent/DashboardTableItemPart.vue'
 import VendorTableItem from '@/Views/Dashboard/Parts/Orders/Vendor/DashboardTableItemPart.vue'
+import FamilyTableItem from '@/Views/Dashboard/Parts/Orders/Family/DashboardTableItemPart.vue'
 
 import type { TableConfig } from '@/types'
 
@@ -33,5 +34,6 @@ const tableConfig: TableConfig = {
     <FanTableItem />
     <AgentTableItem />
     <VendorTableItem />
+    <FamilyTableItem />
   </DashboardTableWrapper>
 </template>
