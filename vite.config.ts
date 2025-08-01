@@ -14,9 +14,13 @@ export default defineConfig({
     vueDevTools(),
     unoCSS(),
   ],
+  
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
+  },
+  define: {
+    global: 'globalThis',
   },
 })
