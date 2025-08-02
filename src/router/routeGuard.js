@@ -10,6 +10,9 @@ export default function routeGuard(to, from, next) {
         auth.logout();
         return next('/log-in');
     }
+    if (!user && to.path !== '/log-in') {
+        return next('/log-in');
+    }
     console.log(`Route Guard: ${to.path}`, route, user);
     
     if (!route) return next('/404');

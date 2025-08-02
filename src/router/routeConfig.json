@@ -1,5 +1,9 @@
 [
   {
+    "path": "/",
+    "redirect": "/log-in"
+  },
+  {
     "slug": "/log-in",
     "requiresAuth": false,
     "redirectIfLoggedIn": "/dashboard",
