@@ -13,11 +13,11 @@ const routes = routeConfig.map(route => {
       const role = auth.simulate?.role || auth.currentUser?.role;
       const override = route.customComponentPath?.[role]?.componentPath;
       const finalPath = override || route.componentPath;
-      if (!finalPath) return import('@/views/components/NotFound.vue');
+      if (!finalPath) return import('@/Views/Components/NotFound.vue');
       try {
         return await import(/* @vite-ignore */ finalPath);
       } catch {
-        return import('@/views/components/NotFound.vue');
+        return import('@/Views/Components/NotFound.vue');
       }
     },
     meta: {
